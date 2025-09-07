@@ -1,42 +1,51 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
 
-.container {
-    text-align: center;
-    background: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap');
 
-.logo {
-    max-width: 150px;
-    margin-bottom: 20px;
-}
+:root{--nav-bg:#0C2340;--accent1:#009688;--accent2:#2E7D32;--muted:#f4f6f8;--card-shadow:rgba(12,35,64,0.08);}
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
+body{font-family:'Open Sans',sans-serif;margin:0;background:#f9f9f9;color:#222;line-height:1.6}
+h1,h2,h3{font-family:'Montserrat',sans-serif;color:var(--nav-bg)}
+a{color:var(--accent1);text-decoration:none}
+img{max-width:100%;display:block}
 
-p {
-    font-size: 16px;
-    margin: 5px 0;
-}
+/* Navbar */
+.navbar{display:flex;justify-content:space-between;align-items:center;background:var(--nav-bg);padding:12px 24px;position:sticky;top:0;z-index:1000}
+.navbar img{height:48px}
+.nav-links{display:flex;gap:18px}
+.nav-links a{color:#fff;font-weight:600;transition:0.2s;padding:8px}
+.nav-links a:hover{color:var(--accent1)}
+.hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer}
+.hamburger div{width:26px;height:3px;background:#fff;border-radius:3px}
+@media(max-width:768px){.nav-links{display:none;flex-direction:column;gap:10px;background:var(--nav-bg);padding:10px}.nav-links.active{display:flex}.hamburger{display:flex}}
 
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
+/* Hero */
+.hero{min-height:420px;background:linear-gradient(rgba(12,35,64,0.6),rgba(0,150,136,0.5)),url('images/hero-bg.png') center/cover no-repeat;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 20px}
+.hero h1{font-size:2.5rem;margin-bottom:10px}
+.hero p{font-size:1.1rem;margin-bottom:20px}
+.hero .btn{padding:12px 24px;border-radius:30px;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#fff;font-weight:700;box-shadow:0 6px 12px rgba(0,0,0,0.15)}
+.hero .btn:hover{opacity:0.9}
 
-a:hover {
-    text-decoration: underline;
-}
+/* Sections */
+.section{padding:60px 20px;max-width:1100px;margin:auto}
+.alt-bg{background:var(--muted)}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#fff;border-radius:10px;box-shadow:0 6px 16px var(--card-shadow);padding:20px;transition:0.3s}
+.card:hover{transform:translateY(-4px)}
+.card h3{margin-top:0}
+.readmore{background:transparent;border:1px solid var(--accent1);color:var(--accent1);padding:8px 12px;border-radius:6px;cursor:pointer;font-weight:600;margin-top:10px}
+.readmore:hover{background:var(--accent1);color:#fff}
+.service-details{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
+.service-details.open{margin-top:10px}
+
+/* Clients */
+.clients-logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;text-align:center}
+.clients-logos .placeholder{background:#fff;padding:20px;border-radius:8px;box-shadow:0 4px 12px var(--card-shadow)}
+.note{text-align:center;margin-top:10px;font-size:0.9rem;color:#555}
+
+/* Contact */
+input,textarea{width:100%;padding:12px;border-radius:8px;border:1px solid #ccc;margin-bottom:12px;font-size:1rem}
+button{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#fff;border:none;padding:12px 20px;border-radius:30px;cursor:pointer;font-size:1rem}
+button:hover{opacity:0.9}
+
+/* Footer */
+footer{background:var(--nav-bg);color:#fff;text-align:center;padding:20px;margin-top:40px}
