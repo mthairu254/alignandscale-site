@@ -1,227 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Align & Scale Solutions</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f5f5f5;
-      padding: 50px 20px;
-      color: #333;
-    }
-    .logo {
-      max-width: 200px;
-      margin-bottom: 20px;
-    }
-    .container {
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      display: inline-block;
-      max-width: 800px;
-      width: 100%;
-      box-sizing: border-box;
-      text-align: left; /* Align text left within the container */
-    }
-    h1, h2, h3 {
-      text-align: center;
-      color: #555;
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-    h2 {
-      font-size: 24px;
-      margin-top: 40px;
-      margin-bottom: 15px;
-      padding-top: 20px;
-      border-top: 1px solid #eee;
-    }
-    h3 {
-      font-size: 20px;
-      margin-top: 25px;
-      margin-bottom: 10px;
-    }
-    p, ul {
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 15px;
-    }
-    ul {
-      margin-left: 20px;
-      list-style: disc;
-    }
-    .core-values ul {
-      list-style: none;
-      padding: 0;
-    }
-    .core-values li {
-      margin-bottom: 10px;
-    }
-    .service-item {
-      margin-bottom: 30px;
-    }
-    .service-item h4 {
-      font-size: 18px;
-      color: #333;
-      margin-bottom: 5px;
-    }
-    .contact {
-      margin-top: 40px;
-      font-size: 14px;
-      text-align: center;
-    }
-    .social-icons a {
-      margin: 0 8px;
-      text-decoration: none;
-      font-size: 18px;
-      color: #333;
-    }
-    
-    /* Mobile responsiveness */
-    @media (max-width: 600px) {
-      body {
-        padding: 20px 10px;
-      }
-      .container {
-        padding: 20px;
-      }
-      h1 {
-        font-size: 24px;
-      }
-      h2 {
-        font-size: 20px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align & Scale Solutions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #f8f9fa;
+            color: #495057;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e9ecef;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            max-width: 120px; /* Reduced logo size */
+            margin-bottom: 5px; /* Reduced space below logo */
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0056b3;
+        }
+        h1, h2, h3 {
+            color: #343a40;
+            text-align: center;
+        }
+        h1 { font-size: 2.5em; margin-bottom: 10px; }
+        h2 { font-size: 2em; margin-top: 50px; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+        h3 { font-size: 1.5em; margin-top: 30px; }
+        p, ul {
+            text-align: justify;
+            line-height: 1.7;
+        }
+        ul {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+        .section-content {
+            display: none; /* Hide all content sections initially */
+        }
+        .section-content:target {
+            display: block; /* Show the target section on click (using CSS) */
+        }
+        .section-content:first-of-type {
+            display: block; /* Show the Home section by default */
+        }
+        .client-list {
+            list-style: none;
+            text-align: center;
+        }
+        .client-list li {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #e9ecef;
+            color: #6c757d;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img src="assets/logo.png" alt="Align & Scale Logo" class="logo">
-    <h1>Website Coming Soon</h1>
-    
-        <p>
-      Align & Scale Solutions specialize in providing transformative consultancy services to healthcare institutions, including hospitals, clinics, and medical centres.
-      We are driven by a mission to empower healthcare organizations through strategic advisory, policy development, operational excellence, and compliance readiness—enabling institutions to scale sustainably and deliver high-quality care.
-    </p>
+    <header>
+        <img src="assets/logo.png" alt="Align & Scale Logo" class="logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#clients">Clients</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-        <h2>Our Vision & Mission</h2>
-    <h3>Our Vision</h3>
-    <p>
-      To be the premier healthcare-focused consultancy in Kenya, enabling healthcare organizations to achieve excellence, sustainability, and compliance through strategic alignment and capacity building.
-    </p>
-    <h3>Our Mission</h3>
-    <p>
-      To align institutional goals with best practices, and scale organizational capabilities by offering customized consultancy, training, and support services that improve operations, compliance, and patient care.
-    </p>
+    <div class="container">
+        <section id="home" class="section-content">
+            <h1>Align & Scale Solutions</h1>
+            <p>
+                We are preparing something exciting. Align & Scale Solutions specializes in providing transformative consultancy services to healthcare institutions, including hospitals, clinics, and medical centres.
+            </p>
+            <p>
+                We are driven by a mission to empower healthcare organizations through strategic advisory, policy development, operational excellence, and compliance readiness—enabling institutions to scale sustainably and deliver high-quality care.
+            </p>
+        </section>
 
-        <div class="core-values">
-      <h2>Our Core Values</h2>
-      <ul>
-        <li><strong>Integrity</strong> – Upholding the highest standards of honesty, ethics, and accountability.</li>
-        <li><strong>Excellence</strong> – Delivering value through quality, accuracy, and innovation.</li>
-        <li><strong>Professionalism</strong> – Ensuring expert guidance and respectful collaboration.</li>
-        <li><strong>Impact</strong> – Focusing on sustainable, measurable outcomes.</li>
-        <li><strong>Confidentiality</strong> – Protecting client information and building trust.</li>
-      </ul>
-    </div>
-    
-        <h2>Our Services</h2>
-    <p>Align & Scale Solutions offers a wide suite of services tailored to the needs of hospitals, clinics, and healthcare start-ups.</p>
-    
-    <div class="service-item">
-      <h4>Healthcare Business Development & Strategic Planning</h4>
-      <p>We guide healthcare institutions in shaping and implementing long-term growth strategies. Our approach involves conducting in-depth diagnostics, crafting visionary goals, and setting strategic targets. We support facilities in repositioning themselves, responding to market demands, and unlocking revenue opportunities through robust business models and turnaround strategies for underperforming units. We also assist in setting up new service lines, evaluating viability, and creating implementation roadmaps.</p>
-    </div>
-    
-    <div class="service-item">
-      <h4>Marketing Research & Strategy Development</h4>
-      <p>We conduct market analysis, patient feedback studies, and competitor reviews to help our clients understand their target audience and refine their service offerings. Our team designs strategic marketing plans and brand positioning strategies that increase patient flow and build a loyal client base. We also support online and offline campaigns, helping institutions boost their public image and visibility in an increasingly competitive healthcare environment.</p>
-    </div>
+        <section id="about" class="section-content">
+            <h2>About Align & Scale</h2>
+            <h3>Our Vision</h3>
+            <p>To be the premier healthcare-focused consultancy in Kenya, enabling healthcare organizations to achieve excellence, sustainability, and compliance through strategic alignment and capacity building.</p>
+            <h3>Our Mission</h3>
+            <p>To align institutional goals with best practices, and scale organizational capabilities by offering customized consultancy, training, and support services that improve operations, compliance, and patient care.</p>
+            <h3>Our Core Values</h3>
+            <ul>
+                <li><strong>Integrity</strong> – Upholding the highest standards of honesty, ethics, and accountability.</li>
+                <li><strong>Excellence</strong> – Delivering value through quality, accuracy, and innovation.</li>
+                <li><strong>Professionalism</strong> – Ensuring expert guidance and respectful collaboration.</li>
+                <li><strong>Impact</strong> – Focusing on sustainable, measurable outcomes.</li>
+                <li><strong>Confidentiality</strong> – Protecting client information and building trust.</li>
+            </ul>
+        </section>
 
-    <div class="service-item">
-      <h4>Human Resource Management Support</h4>
-      <p>We offer end-to-end HR solutions—from workforce planning and recruitment to performance management and policy development. Our services include developing organizational structures, preparing job descriptions, conducting skills audits, and facilitating recruitment processes. We also design performance appraisal systems, manage conflict resolution processes, and conduct HR audits to ensure compliance with labour laws.</p>
-    </div>
-    
-    <div class="service-item">
-      <h4>Policy Development & SOP Formulation</h4>
-      <p>We help facilities build robust operational frameworks by drafting policy documents that govern service delivery, administration, and compliance. We formulate service-specific SOPs for outpatient care, laboratory, pharmacy, finance, HR, and more. These policies and SOPs promote standardization, support training efforts, and are critical in attaining accreditations such as ISO or compliance with Ministry of Health and regulatory bodies.</p>
-    </div>
-    
-    <div class="service-item">
-      <h4>ISO Certification Readiness</h4>
-      <p>We support organizations on their path to internationally recognized standards including:</p>
-      <ul>
-        <li><strong>ISO 9001:2015</strong> (Quality Management Systems): Ensures quality control and operational efficiency.</li>
-        <li><strong>ISO 15189</strong> (Medical Laboratories): Focused on quality and competence in medical laboratories.</li>
-      </ul>
-      <p>We provide gap assessments, documentation support, internal audits, and train teams to meet ISO standards and establish a continuous improvement culture. Our role includes developing QMS documentation, coordinating management reviews, and mentoring internal audit teams.</p>
-    </div>
-    
-    <div class="service-item">
-      <h4>Executive Coaching for SMEs & Health Institutions</h4>
-      <p>We coach founders, administrators, and department heads in leadership, communication, decision-making, and strategy execution. Our coaching programs are tailored to help SMEs and health leaders unlock their potential, address operational bottlenecks, and develop strategic thinking. We use tools such as 360-degree feedback, leadership assessment frameworks, and customized coaching plans.</p>
-    </div>
+        <section id="services" class="section-content">
+            <h2>Our Services</h2>
+            <p>Align & Scale Solutions offers a wide suite of services tailored to the needs of hospitals, clinics, and healthcare start-ups.</p>
+            <h3>Healthcare Business Development & Strategic Planning</h3>
+            <p>We guide healthcare institutions in shaping and implementing long-term growth strategies. Our approach involves conducting in-depth diagnostics, crafting visionary goals, and setting strategic targets. We support facilities in repositioning themselves, responding to market demands, and unlocking revenue opportunities through robust business models and turnaround strategies for underperforming units. We also assist in setting up new service lines, evaluating viability, and creating implementation roadmaps.</p>
+            </section>
 
-    <div class="service-item">
-      <h4>Operational Audits & Compliance Readiness</h4>
-      <p>We assess facility compliance with statutory and regulatory frameworks including SHA (formerly NHIF), KMPDC, NCK, KMLTTB, and others. Our audits identify gaps and operational risks while proposing actionable improvements. We develop audit tools, conduct field assessments, and prepare facilities for external inspections and license renewals. We also assist in drawing compliance action plans and conducting mock audits.</p>
-    </div>
-    
-    <div class="service-item">
-      <h4>Training & Capacity Building</h4>
-      <p>Our capacity building programs are customized to improve service delivery. We provide induction training for new hires, continuous professional development sessions, and tailored modules for support staff. Our training covers clinical support, front office operations, administration, and compliance. We also prepare training manuals, assessment tools, and post-training evaluation reports.</p>
-    </div>
-    
-    <div class="service-item">
-      <h4>Healthcare Research & Market Analysis</h4>
-      <p>We conduct research projects and feasibility studies that inform program design, expansion plans, and investment decisions. We analyse trends, generate reports, and support facilities in data-driven planning and decision-making. Our team offers support in proposal writing, baseline surveys, outcome evaluations, and needs assessments.</p>
-    </div>
-    
-    <div class="service-item">
-      <h4>Remote Administrative & Technical Support</h4>
-      <p>Our retainer services provide clients with access to virtual consultancy support in HR, compliance, strategic planning, and business development. We ensure regular check-ins, documentation reviews, and expert advisory even in the absence of on-site consultants. This model offers continuity, affordability, and access to experienced consultants without long-term staffing commitments.</p>
-    </div>
-    
-        <h2>Our Approach</h2>
-    <p>We believe that every institution is unique, and our solutions are therefore tailored to suit specific needs, context, and capacity. Our approach is:</p>
-    <ul>
-      <li><strong>Consultative:</strong> We begin by listening and conducting structured assessments to understand the institution’s current position.</li>
-      <li><strong>Data-Driven:</strong> Every strategy and recommendation is backed by data, benchmarks, and real-world experience in the health sector.</li>
-      <li><strong>Collaborative:</strong> We work alongside your leadership and staff to co-create solutions, build ownership, and ensure sustainability.</li>
-      <li><strong>Structured:</strong> We use globally recognized models and frameworks, including ISO standards, healthcare best practices, and strategic planning tools.</li>
-      <li><strong>Outcome-Oriented:</strong> We focus on real results—be it better compliance, operational efficiency, staff productivity, or patient satisfaction.</li>
-    </ul>
+        <section id="clients" class="section-content">
+            <h2>Our Clients</h2>
+            <p>We have successfully worked with:</p>
+            <ul class="client-list">
+                <li>Hashi Medical Centre – Patklands, Murang’a & Migori</li>
+                <li>Hope Renal Centre – Ol Kalou</li>
+                <li>Robins Healthcare – Maua</li>
+                <li>Maua Cottage Hospital – Meru County</li>
+                <li>Caremark Hospital – Nairobi</li>
+                <li>Springcrest Medical Centre -Othaya</li>
+            </ul>
+        </section>
 
-        <h2>Our Clients</h2>
-    <p>We have successfully worked with:</p>
-    <ul>
-      <li>Hashi Medical Centre – Patklands, Murang’a & Migori</li>
-      <li>Hope Renal Centre – Ol Kalou</li>
-      <li>Robins Healthcare – Maua</li>
-      <li>Maua Cottage Hospital – Meru County</li>
-      <li>Caremark Hospital – Nairobi</li>
-      <li>Springcrest Medical Centre -Othaya</li>
-    </ul>
-    
-        <p style="text-align: center; font-style: italic;">For tailored consultancy that transforms your healthcare institution—Align with us, Scale with us.</p>
+        <section id="contact" class="section-content">
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> info@alignandscale.co.ke</p>
+            <p><strong>Phone:</strong> +254 110 006 679</p>
+            <p><strong>Location:</strong> Murang’a, Kenya</p>
+        </section>
+    </div>
 
-        <div class="contact">
-      <p><strong>Email:</strong> info@alignandscale.co.ke</p>
-      <p><strong>Phone:</strong> +254 110 006 679</p>
-      <p><strong>Location:</strong> Murang’a, Kenya</p>
-    </div>
-    
-    <div class="social-icons" style="text-align: center;">
-      <a href="https://www.linkedin.com/company/align-scale-solutions" target="_blank">LinkedIn</a> | 
-      <a href="https://twitter.com/alignandscale" target="_blank">Twitter</a>
-    </div>
-  </div>
+    <footer>
+        <p>For tailored consultancy that transforms your healthcare institution—Align with us, Scale with us.</p>
+        <p>&copy; 2025 Align & Scale Solutions. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
