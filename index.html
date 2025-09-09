@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home - Align & Scale Solutions</title>
-<meta name="description" content="Align & Scale Solutions provides transformative healthcare consultancy in Kenya — empowering hospitals, clinics, and medical centres through strategy, compliance, and operational excellence.">
-<meta name="keywords" content="Healthcare consultancy, Kenya healthcare, hospital advisory, compliance, strategy, Align & Scale Solutions">
-<link rel="canonical" href="https://alignandscale.co.ke/">
-<meta property="og:title" content="Home - Align & Scale Solutions">
-<meta property="og:description" content="Align & Scale Solutions provides transformative healthcare consultancy in Kenya — empowering hospitals, clinics, and medical centres through strategy, compliance, and operational excellence.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="images/hero-bg.png">
-<meta property="og:url" content="https://alignandscale.co.ke/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Home - Align & Scale Solutions">
-<meta name="twitter:description" content="Align & Scale Solutions provides transformative healthcare consultancy in Kenya — empowering hospitals, clinics, and medical centres through strategy, compliance, and operational excellence.">
-<meta name="twitter:image" content="images/hero-bg.png">
-<link rel="stylesheet" href="styles.css">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="images/favicon.png">
-<link rel="manifest" href="manifest.json">
-
-</head><body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Align & Scale Solutions</title>
+  <meta name="description" content="Align & Scale Solutions provides transformative healthcare consultancy in Kenya — empowering hospitals, clinics, and medical centres through strategy, compliance, and operational excellence.">
+  <meta name="keywords" content="Healthcare consultancy, Kenya healthcare, hospital advisory, compliance, strategy, Align & Scale Solutions">
+  <link rel="canonical" href="https://alignandscale.co.ke/">
+  <meta property="og:title" content="Home - Align & Scale Solutions">
+  <meta property="og:description" content="Align & Scale Solutions provides transformative healthcare consultancy in Kenya — empowering hospitals, clinics, and medical centres through strategy, compliance, and operational excellence.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero-bg.png">
+  <meta property="og:url" content="https://alignandscale.co.ke/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Home - Align & Scale Solutions">
+  <meta name="twitter:description" content="Align & Scale Solutions provides transformative healthcare consultancy in Kenya — empowering hospitals, clinics, and medical centres through strategy, compliance, and operational excellence.">
+  <meta name="twitter:image" content="images/hero-bg.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
 <header class="navbar">
   <a href="index.html"><img src="images/logo.png" alt="Align & Scale Solutions Logo"></a>
   <nav>
     <div class="hamburger"><div></div><div></div><div></div></div>
     <div class="nav-links">
-      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="clients.html">Clients</a><a href="contact.html">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="clients.html">Clients</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
 
-<section class="hero" data-aos="fade-up">
+<!-- Hero Slideshow -->
+<section class="hero">
   <div class="hero-slide"></div>
   <div class="hero-slide"></div>
   <div class="hero-slide"></div>
@@ -47,24 +52,53 @@
   </div>
 </section>
 
-<footer><p>&copy; 2025 Align & Scale Solutions | Align with us, Scale with us.</p></footer>
+<!-- Welcome Section -->
+<section class="section" data-aos="fade-up">
+  <h2>Welcome to Align & Scale Solutions</h2>
+  <p>We specialize in providing transformative consultancy services to healthcare institutions, including hospitals, clinics, and medical centres.</p>
+</section>
+
+<!-- Vision & Mission Section -->
+<section class="section alt-bg" data-aos="fade-up">
+  <h2>Our Vision & Mission</h2>
+  <p><strong>Vision:</strong> To be the premier healthcare-focused consultancy in Kenya, enabling organizations to achieve excellence and sustainability.</p>
+  <p><strong>Mission:</strong> To align institutional goals with best practices and scale capabilities through consultancy, training, and support.</p>
+</section>
+
+<!-- Services Preview Section -->
+<section class="section" data-aos="fade-up">
+  <h2>Our Core Services</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Healthcare Strategy</h3>
+      <p>We help facilities develop strategic plans that drive growth, compliance, and sustainability.</p>
+      <a href="services.html" class="readmore">Read More</a>
+    </div>
+    <div class="card">
+      <h3>Operational Excellence</h3>
+      <p>We streamline processes and implement best practices to improve efficiency and outcomes.</p>
+      <a href="services.html" class="readmore">Read More</a>
+    </div>
+    <div class="card">
+      <h3>Regulatory Compliance</h3>
+      <p>We ensure your institution meets all required health regulations and accreditation standards.</p>
+      <a href="services.html" class="readmore">Read More</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Align & Scale Solutions | Align with us, Scale with us.</p>
+</footer>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded',()=>{
-  const ham=document.querySelector('.hamburger');const nav=document.querySelector('.nav-links');
+  const ham=document.querySelector('.hamburger');
+  const nav=document.querySelector('.nav-links');
   if(ham){ham.addEventListener('click',()=>nav.classList.toggle('active'));}
-  document.querySelectorAll('.readmore').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-      const id=btn.dataset.target;
-      const el=document.getElementById(id);
-      if(el.classList.contains('open')){
-        el.classList.remove('open');el.style.maxHeight=0;btn.textContent="Read More";
-      } else {
-        el.classList.add('open');el.style.maxHeight=el.scrollHeight+"px";btn.textContent="Show Less";
-      }
-    });
-  });
   AOS.init();
 });
 </script>
-</body></html>
+</body>
+</html>
