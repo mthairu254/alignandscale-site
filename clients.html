@@ -1,64 +1,48 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clients - Align & Scale Solutions</title>
-<meta name="description" content="Align & Scale Solutions provides transformative healthcare consultancy in Kenya — empowering hospitals, clinics, and medical centres through strategy, compliance, and operational excellence.">
-<meta name="keywords" content="Healthcare consultancy, Kenya healthcare, hospital advisory, compliance, strategy, Align & Scale Solutions">
-<link rel="canonical" href="https://alignandscale.co.ke/clients.html">
-<meta property="og:title" content="Clients - Align & Scale Solutions">
-<meta property="og:description" content="Align & Scale Solutions provides transformative healthcare consultancy in Kenya — empowering hospitals, clinics, and medical centres through strategy, compliance, and operational excellence.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="images/hero-bg.png">
-<meta property="og:url" content="https://alignandscale.co.ke/clients.html">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Clients - Align & Scale Solutions">
-<meta name="twitter:description" content="Align & Scale Solutions provides transformative healthcare consultancy in Kenya — empowering hospitals, clinics, and medical centres through strategy, compliance, and operational excellence.">
-<meta name="twitter:image" content="images/hero-bg.png">
-<link rel="stylesheet" href="styles.css">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="icon" type="image/png" href="images/favicon.png">
-<link rel="manifest" href="manifest.json">
-</head><body>
-<header class="navbar">
-  <a href="index.html"><img src="images/logo.png" alt="Align & Scale Solutions Logo"></a>
-  <nav>
-    <div class="hamburger"><div></div><div></div><div></div></div>
-    <div class="nav-links">
-      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="clients.html">Clients</a><a href="contact.html">Contact</a>
+  <title>Clients | Align &amp; Scale Solutions</title>
+  <meta name="description" content="This page has moved. Please visit our Experience page.">
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="canonical" href="https://alignandscale.co.ke/experience.html">
+
+  <meta http-equiv="refresh" content="0;url=experience.html">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon-192x192.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0C2340">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="navbar-brand" aria-label="Align & Scale Solutions Home">
+        <img src="images/logo.png" alt="Align & Scale Solutions logo" width="44" height="44">
+        <span class="navbar-brand-text">Align <span>&amp;</span> Scale</span>
+      </a>
     </div>
   </nav>
-</header>
 
-<section class="section" data-aos="fade-up">
-  <h2>Our Clients</h2>
-  <div class="clients-logos">
-    <div class="placeholder">Hashi Medical Centre</div>
-    <div class="placeholder">Hope Renal Centre</div>
-    <div class="placeholder">Robins Healthcare</div>
-    <div class="placeholder">Maua Cottage Hospital</div>
-    <div class="placeholder">Caremark Hospital</div>
-    <div class="placeholder">Springcrest Medical Centre</div>
-  </div>
-  <footer><p>&copy; 2025 Align & Scale Solutions | Align with us, Scale with us.</p></footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded',()=>{
-  const ham=document.querySelector('.hamburger');const nav=document.querySelector('.nav-links');
-  if(ham){ham.addEventListener('click',()=>nav.classList.toggle('active'));}
-  document.querySelectorAll('.readmore').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-      const id=btn.dataset.target;
-      const el=document.getElementById(id);
-      if(el.classList.contains('open')){
-        el.classList.remove('open');el.style.maxHeight=0;btn.textContent="Read More";
-      } else {
-        el.classList.add('open');el.style.maxHeight=el.scrollHeight+"px";btn.textContent="Show Less";
-      }
-    });
-  });
-  AOS.init();
-});
-</script>
-</body></html>
+  <section class="section">
+    <div class="container">
+      <div class="error-page">
+        <div>
+          <h1 style="font-size: 3rem; color: var(--navy);">Redirecting</h1>
+          <p>This page has moved to our Experience page.</p>
+          <p><a href="experience.html" class="btn btn-primary">Go to Experience</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    window.location.href = 'experience.html';
+  </script>
+</body>
+</html>

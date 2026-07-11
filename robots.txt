@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+Disallow: /clients.html
+
+Sitemap: https://alignandscale.co.ke/sitemap.xml
