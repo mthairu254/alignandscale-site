@@ -962,18 +962,9 @@ p:last-child {
 }
 
 .footer-brand img {
-  height: 40px;
+  width: 180px;
+  height: auto;
   margin-bottom: 14px;
-}
-
-.footer-brand h3 {
-  font-size: 1.3rem;
-  color: var(--white);
-  margin-bottom: 12px;
-}
-
-.footer-brand h3 span {
-  color: var(--teal-light);
 }
 
 .footer-brand p {
@@ -1201,6 +1192,10 @@ p:last-child {
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 28px;
+  }
+
+  .footer-brand img {
+    width: 155px;
   }
 
   .footer-bottom {
